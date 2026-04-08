@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Summit Industrial Services — Class A Licensed Asbestos Removal & Demolition Services in Western Australia. Perth & Karratha specialists.">
-<title>Summit Industrial Services | Asbestos Removal & Demolition WA</title>
+<meta name="description" content="Mac Construction and Consulting — Class A Licensed Asbestos Removal & Demolition Services in Western Australia. Perth & Karratha specialists.">
+<title>Mac Construction and Consulting | Asbestos Removal & Demolition WA</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=IBM+Plex+Sans+Condensed:wght@400;600;700&family=League+Spartan:wght@500;600;700;800&display=swap" rel="stylesheet">
 
@@ -694,14 +694,14 @@ button { font-family: var(--font-body); }
   background-size: cover;
   background-position: center;
   filter: grayscale(100%) contrast(1.08);
-  transition: transform .65s var(--ease-out);
+  transition: transform .65s var(--ease-out), filter .65s ease;
 }
 .proj-1 { background-image: var(--img-industrial); }
 .proj-2 { background-image: var(--img-office); }
 .proj-3 { background-image: var(--img-house); }
 .proj-4 { background-image: var(--img-demolition); }
 .proj-5 { background-image: var(--img-industrial); }
-.proj-card:hover .proj-thumb { transform: scale(1.08); }
+.proj-card:hover .proj-thumb { transform: scale(1.08); filter: grayscale(0%) contrast(1); }
 
 .proj-overlay {
   position: absolute; inset: 0;
@@ -753,9 +753,11 @@ button { font-family: var(--font-body); }
   background-size: cover;
   background-position: center;
   filter: grayscale(100%) contrast(1.06);
+  transition: filter .5s ease;
 }
+.ba-slider:hover .ba-panel { filter: grayscale(0%) contrast(1); }
 .ba-before { background-image: var(--img-demolition); }
-.ba-after  { background-image: var(--img-office); clip-path: inset(0 50% 0 0); transition: none; }
+.ba-after  { background-image: var(--img-office); clip-path: inset(0 50% 0 0); transition: filter .5s ease; }
 
 .ba-divline {
   position: absolute; top: 0; bottom: 0; left: 50%; width: 2.5px;
@@ -798,7 +800,7 @@ button { font-family: var(--font-body); }
   filter: grayscale(100%) contrast(1.05);
   transition: transform .45s var(--ease-out), filter .45s;
 }
-.about-photo:hover { transform: scale(1.03); filter: brightness(1.08); }
+.about-photo:hover { transform: scale(1.03); filter: grayscale(0%) brightness(1.08); }
 .about-photo:first-child { grid-row: span 2; min-height: 412px; background-image: var(--img-worker); }
 .about-photo:nth-child(2) { background-image: var(--img-handshake); }
 .about-photo:nth-child(3) { background-image: var(--img-outback); }
@@ -872,7 +874,9 @@ button { font-family: var(--font-body); }
   display: flex; align-items: center; justify-content: center; font-size: 130px;
   position: relative;
   box-shadow: 0 40px 100px rgba(0,0,0,.5);
+  transition: filter .5s ease;
 }
+.why-main-img:hover { filter: grayscale(0%) contrast(1); }
 .why-main-img::before {
   content: ''; position: absolute; inset: 0;
   background: radial-gradient(ellipse at 50% 80%, rgba(255,255,255,.12), transparent 65%);
@@ -1017,11 +1021,11 @@ button { font-family: var(--font-body); }
   background-size: cover;
   background-position: center;
   filter: grayscale(100%) contrast(1.06);
-  transition: transform .6s var(--ease-out);
+  transition: transform .6s var(--ease-out), filter .6s ease;
 }
 .loc-card:nth-child(1) .loc-bg { background-image: var(--img-perth); }
 .loc-card:nth-child(2) .loc-bg { background-image: var(--img-outback); }
-.loc-card:hover .loc-bg { transform: scale(1.06); }
+.loc-card:hover .loc-bg { transform: scale(1.06); filter: grayscale(0%) contrast(1); }
 .loc-overlay {
   position: absolute; inset: 0;
   background: linear-gradient(to top, rgba(10,10,10,.9) 0%, rgba(10,10,10,.4) 55%, transparent 100%);
@@ -1252,7 +1256,7 @@ button { font-family: var(--font-body); }
 
 <!-- LOADER -->
 <div class="loader" id="loader">
-  <div class="loader-logo"><img src="logo.svg" alt="Summit Industrial Services logo"></div>
+  <div class="loader-logo"><img src="logo.svg" alt="Mac Construction and Consulting logo"></div>
   <div class="loader-bar"><div class="loader-fill"></div></div>
   <div class="loader-text">Initialising Site Safety Systems...</div>
 </div>
@@ -1279,9 +1283,9 @@ button { font-family: var(--font-body); }
 <header class="site-header" id="siteHeader">
   <div class="header-inner">
     <a href="#" class="logo">
-      <div class="logo-mark"><img src="logo.svg" alt="Summit Industrial Services logo"></div>
+      <div class="logo-mark"><img src="logo.svg" alt="Mac Construction and Consulting logo"></div>
       <div class="logo-text-wrap">
-        <span class="logo-name">Summit</span>
+        <span class="logo-name">Mac Construction and Consulting</span>
         <span class="logo-tagline">Industrial Services</span>
       </div>
     </a>
@@ -1606,7 +1610,7 @@ button { font-family: var(--font-body); }
       <div class="reveal-right">
         <div class="section-eyebrow">Our Story</div>
         <h2 class="section-title">Family-Run.<br>Indigenous-Owned.<br><span class="accent-orange">Community First.</span></h2>
-        <p style="font-size:16px;line-height:1.8;color:var(--grey-1);margin-bottom:20px;">Summit Industrial Services was founded on a simple belief: that every worker, family, and community deserves to live and work in environments free from hazardous risk. Born in Western Australia, we bring together deep technical expertise with an authentic commitment to the land and its people.</p>
+        <p style="font-size:16px;line-height:1.8;color:var(--grey-1);margin-bottom:20px;">Mac Construction and Consulting was founded on a simple belief: that every worker, family, and community deserves to live and work in environments free from hazardous risk. Born in Western Australia, we bring together deep technical expertise with an authentic commitment to the land and its people.</p>
         <p style="font-size:16px;line-height:1.8;color:var(--grey-1);margin-bottom:30px;">As an Indigenous-owned business, we carry a proud connection to Country and a responsibility to protect it — today, and for generations to come. That's not marketing language. It's who we are.</p>
         <div class="indigenous-banner">
           <div class="ab-flag">
@@ -1640,7 +1644,7 @@ button { font-family: var(--font-body); }
   <div class="container">
     <div class="why-grid">
       <div class="reveal-left">
-        <div class="section-eyebrow">Why Summit</div>
+        <div class="section-eyebrow">Why Mac Construction and Consulting</div>
         <h2 class="section-title">Built on Trust.<br>Backed by<br><span class="accent-orange">Expertise.</span></h2>
         <p class="section-sub">We don't just remove hazards. We engineer outcomes that protect people, satisfy regulators, and give you complete peace of mind — from first call to final certificate.</p>
         <div class="why-features">
@@ -1746,7 +1750,7 @@ button { font-family: var(--font-body); }
     <div class="testi-grid reveal">
       <div class="testi-card d1">
         <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-        <p class="testi-text">"Summit made what felt like an overwhelming, high-risk process completely straightforward and stress-free. Incredibly professional team, lightning-fast mobilisation, and the compliance paperwork was immaculate. We'd trust nobody else with our portfolio."</p>
+        <p class="testi-text">"Mac Construction and Consulting made what felt like an overwhelming, high-risk process completely straightforward and stress-free. Incredibly professional team, lightning-fast mobilisation, and the compliance paperwork was immaculate. We'd trust nobody else with our portfolio."</p>
         <div class="testi-author">
           <div class="testi-av">MR</div>
           <div><div class="testi-name">Michael Robertson</div><div class="testi-role">Senior Property Developer, Perth WA</div></div>
@@ -1754,7 +1758,7 @@ button { font-family: var(--font-body); }
       </div>
       <div class="testi-card d2">
         <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-        <p class="testi-text">"The Summit crew in Karratha were absolutely exceptional. They understood our LNG environment, adapted to our operational schedule, and completed a 18,000m² decontamination without a single safety incident. Remarkable work."</p>
+        <p class="testi-text">"The Mac Construction and Consulting crew in Karratha were absolutely exceptional. They understood our LNG environment, adapted to our operational schedule, and completed a 18,000m² decontamination without a single safety incident. Remarkable work."</p>
         <div class="testi-author">
           <div class="testi-av">SK</div>
           <div><div class="testi-name">Sarah Kowalski</div><div class="testi-role">Site Manager, Resources Sector, Karratha</div></div>
@@ -1762,7 +1766,7 @@ button { font-family: var(--font-body); }
       </div>
       <div class="testi-card d3">
         <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-        <p class="testi-text">"As an Indigenous-owned business themselves, Summit genuinely understands what it means to work on Country with respect and care. Their Supply Nation certification helped us meet our procurement targets without compromising an ounce of quality."</p>
+        <p class="testi-text">"As an Indigenous-owned business themselves, Mac Construction and Consulting genuinely understands what it means to work on Country with respect and care. Their Supply Nation certification helped us meet our procurement targets without compromising an ounce of quality."</p>
         <div class="testi-author">
           <div class="testi-av">TW</div>
           <div><div class="testi-name">Thomas Williams</div><div class="testi-role">Procurement Manager, Local Government Authority</div></div>
@@ -1770,7 +1774,7 @@ button { font-family: var(--font-body); }
       </div>
       <div class="testi-card d4">
         <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-        <p class="testi-text">"When cyclone damage exposed asbestos across our school buildings, Summit had crews on-site within 6 hours. They secured the buildings, protected our community, and delivered clearance documentation within 72 hours. Absolutely extraordinary emergency response."</p>
+        <p class="testi-text">"When cyclone damage exposed asbestos across our school buildings, Mac Construction and Consulting had crews on-site within 6 hours. They secured the buildings, protected our community, and delivered clearance documentation within 72 hours. Absolutely extraordinary emergency response."</p>
         <div class="testi-author">
           <div class="testi-av">AL</div>
           <div><div class="testi-name">Amanda Lee</div><div class="testi-role">Principal, Regional School, Pilbara WA</div></div>
@@ -1778,7 +1782,7 @@ button { font-family: var(--font-body); }
       </div>
       <div class="testi-card d5">
         <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-        <p class="testi-text">"We've used Summit across 14 commercial demolition projects over 4 years. Consistent quality, zero safety issues, always on budget and on time. Their documentation is the best I've seen in the industry — never had a compliance issue once."</p>
+        <p class="testi-text">"We've used Mac Construction and Consulting across 14 commercial demolition projects over 4 years. Consistent quality, zero safety issues, always on budget and on time. Their documentation is the best I've seen in the industry — never had a compliance issue once."</p>
         <div class="testi-author">
           <div class="testi-av">JP</div>
           <div><div class="testi-name">James Patterson</div><div class="testi-role">Construction Director, Major Commercial Builder</div></div>
@@ -1786,7 +1790,7 @@ button { font-family: var(--font-body); }
       </div>
       <div class="testi-card d6">
         <div class="stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
-        <p class="testi-text">"Summit's asbestos management plan gave our heritage property the detailed, council-approved documentation we needed to progress our development. Their consultants were knowledgeable, thorough, and delivered above and beyond expectations."</p>
+        <p class="testi-text">"Mac Construction and Consulting's asbestos management plan gave our heritage property the detailed, council-approved documentation we needed to progress our development. Their consultants were knowledgeable, thorough, and delivered above and beyond expectations."</p>
         <div class="testi-author">
           <div class="testi-av">CB</div>
           <div><div class="testi-name">Chloe Barnett</div><div class="testi-role">Heritage Property Developer, Fremantle WA</div></div>
@@ -1957,9 +1961,9 @@ button { font-family: var(--font-body); }
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#" class="logo">
-          <div class="logo-mark"><img src="logo.svg" alt="Summit Industrial Services logo"></div>
+          <div class="logo-mark"><img src="logo.svg" alt="Mac Construction and Consulting logo"></div>
           <div class="logo-text-wrap">
-            <span class="logo-name">Summit</span>
+            <span class="logo-name">Mac Construction and Consulting</span>
             <span class="logo-tagline">Industrial Services</span>
           </div>
         </a>
@@ -1997,7 +2001,7 @@ button { font-family: var(--font-body); }
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="#">About Summit</a></li>
+          <li><a href="#">About Mac Construction and Consulting</a></li>
           <li><a href="#">Our Leadership Team</a></li>
           <li><a href="#">Certifications &amp; Licences</a></li>
           <li><a href="#">Case Studies</a></li>
@@ -2017,7 +2021,7 @@ button { font-family: var(--font-body); }
       </div>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copy">© 2026 Summit Industrial Services Pty Ltd. ABN 00 000 000 000. All rights reserved.</div>
+      <div class="footer-copy">© 2026 Mac Construction and Consulting Pty Ltd. ABN 00 000 000 000. All rights reserved.</div>
       <div class="footer-legal">
         <a href="#">Privacy Policy</a>
         <a href="#">Terms of Service</a>
